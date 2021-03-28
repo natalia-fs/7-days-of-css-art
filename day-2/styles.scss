@@ -1,0 +1,297 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+}
+
+.head{
+  width: 200px;
+  height: 150px;
+  background: #f3cfc3;
+  border-radius: 40px 40px 0 0;
+  position: relative;
+
+  .hair{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    background: orange;
+    top: -60px;
+    left: calc(50% - 60px);
+    border-radius: 50%;
+    
+    &::before{
+      content: "";
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: orange;
+      position: absolute;
+      top: 30px;
+      left: calc(50% - 25px);
+      left: 55%;
+      z-index: -1;
+    }
+
+    .inner{
+      width: 200px;
+      height: 60px;
+      position: absolute;
+      top: 60px;
+      left: -40px;
+      z-index: 2;
+      border-radius: 40px 40px 0 0;
+      &::before{
+        content: "";
+        width: 30px;
+        height: 60px;
+        background: orange;
+        position: absolute;
+        border-radius: 40px 0;
+        top: 3px;
+        left: 1px;
+        opacity: .4;
+      }
+      &::after{
+        content: "";
+        width: 30px;
+        height: 60px;
+        background: orange;
+        position: absolute;
+        border-radius: 0px 40px;
+        top: 3px;
+        right: 1px;
+        opacity: .4;
+      }
+    }
+  }
+
+  .ears{
+    width: 200px;
+    height: 30px;
+    top: calc(50% - 20px);
+    position: relative;
+    z-index: 2;
+    &::before{
+      content: "";
+      width: 30px;
+      height: 30px;
+      background: #f3cfc3;
+      position: absolute;
+      border-radius: 50%;
+      left: -20px;
+    }
+    &::after{
+      content: "";
+      width: 30px;
+      height: 30px;
+      background: #f3cfc3;
+      position: absolute;
+      border-radius: 50%;
+      right: -20px;
+    }
+  }
+  .eyes{
+    width: 120px;
+    height: 60px;
+    margin: 0 auto;
+
+    &::before{
+      content: "";
+      width: 40px;
+      height: 60px;
+      background: white;
+      border-radius: 20px;
+      position: absolute;
+      top: 30px;
+      left: 55px;
+    }
+    &::after{
+      content: "";
+      width: 40px;
+      height: 60px;
+      background: white;
+      border-radius: 20px;
+      position: absolute;
+      top: 30px;
+      right: 55px;
+    }
+    .aux{
+      width: 100px;
+      height: 50px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+
+      &::before{
+        content: "";
+        width: 20px;
+        height: 32px;
+        background: #141414;
+        position: absolute;
+        border-radius: 10px;
+        top: calc(50% - 10px);
+        left: 20%;
+      }
+      &::after{
+        content: "";
+        width: 20px;
+        height: 32px;
+        background: #141414;
+        position: absolute;
+        border-radius: 10px;
+        top: calc(50% - 10px);
+        right: 20%;
+      }
+    }
+    .aux-2{
+      width: 100px;
+      height: 20px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+
+      &::before{
+        content: "";
+        width: 12px;
+        height: 16px;
+        background: white;
+        position: absolute;
+        border-radius: 50%;
+        top: -40px;
+        left: 20%;
+      }
+      &::after{
+        content: "";
+        width: 12px;
+        height: 16px;
+        background: white;
+        position: absolute;
+        border-radius: 50%;
+        top: -40px;
+        right: 27%;
+      }
+    }
+  }
+
+  .nose{
+    position: relative;
+    background: red;
+    width: 16px;
+    height: 16px;
+    border-radius: 0 50% 50% 50%;
+    transform: rotate(45deg);
+    margin: 0 auto;
+    top: -8px;
+    background: #d6968b;
+  }
+
+  .mouth{
+    width: 28px;
+    height: 20px;
+    border-radius: 50%;
+    // background: red;
+    border: 5px solid #d6968b;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    transform: rotate(20deg);
+    top: 64%;
+    left: 40%;
+    position: absolute;
+  }
+}
+
+.shirt{
+  background: #67d7f9;
+  width: 200px;
+  height: 70px;
+  position: relative;
+
+  &::before{
+    content: "";
+    background: inherit;
+    width: 240px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    border-radius: 20px;
+  }
+
+  .arms{
+    // background: red;
+    position: absolute;
+    width: 240px;
+    height: 100px;
+    left: -20px;
+    z-index: -2;
+    &::before{
+      content: "";
+      width: 30px;
+      height: 90px;
+      position: absolute;
+      background: #67d7f9;
+      transform: rotate(15deg);
+      top: 5%;
+      left: 2px;
+    }
+    &::after{
+      content: "";
+      width: 30px;
+      height: 90px;
+      position: absolute;
+      background: #67d7f9;
+      transform: rotate(-15deg);
+      top: 5%;
+      right: 2px;
+    }
+  }
+  .hands{
+    width: 270px;
+    height: 50px;
+    top: 100%;
+    left: -30px;
+    position: absolute;
+    z-index: -3;
+    &::before{
+      content: "";
+      width: 30px;
+      height: 40px;
+      position: absolute;
+      background: #f3cfc3;
+      border-radius: 50%;
+      // transform: rotate(-15deg);
+      top: 15%;
+      left: 0px;
+    }
+    &::after{
+      content: "";
+      width: 30px;
+      height: 40px;
+      position: absolute;
+      background: #f3cfc3;
+      border-radius: 50%;
+      // transform: rotate(-15deg);
+      top: 15%;
+      right: 10px;
+    }
+  }
+}
+.short{
+  position: relative;
+  width: 200px;
+  height: 50px;
+  background: #3989c1;
+}
