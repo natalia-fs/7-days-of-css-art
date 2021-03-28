@@ -1,0 +1,126 @@
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+
+
+  .blue{
+    width: 120px;
+    height: 120px;
+    position: relative;
+    
+    &::before{
+      content: "";
+      width: 120px;
+      height: 50px;
+      position: absolute;
+      background: #36c5f0;
+      border-radius: 25px;
+      margin-top: 6px;
+    }
+    &::after{
+      content: "";
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      background: #36c5f0;
+      border-radius: 30px 30px 0 30px;
+      top: -64px;
+      right: 0;
+    }
+  }
+  .green{
+    width: 120px;
+    height: 120px;
+    position: relative;
+    margin-left: 12px;
+    
+    &::before{
+      content: "";
+      width: 50px;
+      height: 120px;
+      position: absolute;
+      background: #2eb67d;
+      border-radius: 25px;
+      top: -64px;
+    }
+    &::after{
+      content: "";
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      background: #2eb67d;
+      border-radius: 30px 30px 30px 0;
+      top: -6px;
+      right: 0;
+    }
+  }
+
+  .red{
+    width: 120px;
+    height: 120px;
+    position: relative;
+    margin-left: 12px;
+    top: 0px;
+    left: -264px;
+    transform: rotate(180deg);
+    
+    &::before{
+      content: "";
+      width: 50px;
+      height: 120px;
+      position: absolute;
+      background: #e01e5a;
+      border-radius: 25px;
+      top: -64px;
+    }
+    &::after{
+      content: "";
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      background: #e01e5a;
+      border-radius: 30px 30px 30px 0;
+      top: -6px;
+      right: 0;
+    }
+  }
+  .yellow{
+    // display: none;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    margin-left: 12px;
+    top: 64px;
+    left: -324px;
+    transform: rotate(-270deg);
+    
+    &::before{
+      content: "";
+      width: 50px;
+      height: 120px;
+      position: absolute;
+      background: #ecb22e;
+      border-radius: 25px;
+      top: -64px;
+    }
+    &::after{
+      content: "";
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      background: #ecb22e;
+      border-radius: 30px 30px 30px 0;
+      top: -6px;
+      right: 0;
+    }
+  }
+}
