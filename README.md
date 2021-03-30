@@ -4,7 +4,7 @@ Desafio pessoal para criar (ou recriar) uma arte por dia com HTML e CSS. Não te
 
 - [x] Day 1: Recriar algum logo
 
-- [ ] Day 2: Clonar algum desenho do Duolingo
+- [x] Day 2: Clonar algum desenho do Duolingo
 
 - [ ] Day 3 - Criar arte no Figma e passar para CSS
 
