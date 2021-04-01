@@ -1,0 +1,125 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background: lightblue;
+}
+
+.container {
+  position: relative;
+}
+
+.container .cup {
+  background: #cc4040;
+  width: 100px;
+  height: 270px;
+}
+
+.container .cup::before {
+  content: "";
+  width: 100px;
+  height: 270px;
+  background: inherit;
+  position: absolute;
+  left: -35%;
+  -webkit-transform: skew(5deg);
+          transform: skew(5deg);
+}
+
+.container .cup::after {
+  content: "";
+  width: 100px;
+  height: 270px;
+  background: inherit;
+  position: absolute;
+  right: -35%;
+  -webkit-transform: skew(-5deg);
+          transform: skew(-5deg);
+}
+
+.container .cup .border {
+  position: absolute;
+  background: #ea4d34;
+  width: 230px;
+  height: 20px;
+  z-index: 2;
+  border-radius: 13px;
+  top: -5%;
+  left: -65%;
+}
+
+.container .cup .straw {
+  background: #f5bf47;
+  width: 20px;
+  height: 60px;
+  position: absolute;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  top: -70px;
+  right: -25px;
+}
+
+.container .cup .straw::before {
+  content: "";
+  width: 20px;
+  height: 120px;
+  position: absolute;
+  background: inherit;
+  top: -85px;
+  right: -44px;
+  -webkit-transform: rotate(55deg);
+          transform: rotate(55deg);
+}
+
+.container .cup .base {
+  position: absolute;
+  background: #b33824;
+  width: 130px;
+  height: 10px;
+  z-index: 2;
+  bottom: -10px;
+  border-radius: 0 0 4px 4px;
+  left: -15%;
+  z-index: -1;
+}
+
+.container .cup .aux {
+  width: 160px;
+  height: 100px;
+  background: #f5bf47;
+  position: absolute;
+  z-index: 2;
+  top: 30%;
+  -webkit-transform: skew(10deg, 20deg) rotate(5deg);
+          transform: skew(10deg, 20deg) rotate(5deg);
+  left: -37.5%;
+}
+
+.container .cup .aux::before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0px;
+  right: -9px;
+  background: inherit;
+  -webkit-transform: skew(-9deg, 0deg);
+          transform: skew(-9deg, 0deg);
+}
+/*# sourceMappingURL=styles.css.map */

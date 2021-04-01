@@ -1,4 +1,4 @@
-# # Dia 3 - Criando desenho no Figma e passando para CSS
+# Dia 3 - Criando desenho no Figma e passando para CSS
 
 Duração: cerca de 30 minutos
 

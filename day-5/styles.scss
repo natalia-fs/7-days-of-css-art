@@ -1,0 +1,109 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: lightblue;
+}
+
+.container {
+  position: relative;
+  .cup {
+    background: #cc4040;
+    width: 100px;
+    height: 270px;
+
+    &::before {
+      content: "";
+      width: 100px;
+      height: 270px;
+      background: inherit;
+      position: absolute;
+      left: -35%;
+      transform: skew(5deg);
+    }
+    &::after {
+      content: "";
+      width: 100px;
+      height: 270px;
+      background: inherit;
+      position: absolute;
+      right: -35%;
+      transform: skew(-5deg);
+    }
+
+    .border {
+      position: absolute;
+      background: #ea4d34;
+      width: 230px;
+      height: 20px;
+      z-index: 2;
+      border-radius: 13px;
+      top: -5%;
+      left: -65%;
+    }
+
+    .straw {
+      background: #f5bf47;
+      width: 20px;
+      height: 60px;
+      position: absolute;
+      transform: rotate(10deg);
+      top: -70px;
+      right: -25px;
+
+      &::before {
+        content: "";
+        width: 20px;
+        height: 120px;
+        position: absolute;
+        background: inherit;
+        top: -85px;
+        right: -44px;
+        transform: rotate(55deg);
+      }
+    }
+
+    .base {
+      position: absolute;
+      background: #b33824;
+      width: 130px;
+      height: 10px;
+      z-index: 2;
+      bottom: -10px;
+      border-radius: 0 0 4px 4px;
+      left: -15%;
+      z-index: -1;
+    }
+
+    .aux {
+      width: 160px;
+      height: 100px;
+      background: #f5bf47;
+      position: absolute;
+      // transform: rotate(30deg);
+      z-index: 2;
+      top: 30%;
+      transform: skew(10deg, 20deg) rotate(5deg);
+      left: -37.5%;
+
+      &::before {
+        content: "";
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 0px;
+        right: -9px;
+        background: inherit;
+        transform: skew(-9deg, 0deg);
+      }
+    }
+  }
+}

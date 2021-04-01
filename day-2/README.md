@@ -1,4 +1,4 @@
-# # Dia 2 - Recriando desenho do site Duolingo
+# Dia 2 - Recriando desenho do site Duolingo
 
 Duração: cerca de 50 minutos
 

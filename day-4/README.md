@@ -1,4 +1,4 @@
-# # Dia 4 - Criando pixel art com CSS puro
+# Dia 4 - Criando pixel art com CSS puro
 
 Duração: cerca de 40 minutos
 
