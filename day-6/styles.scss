@@ -1,0 +1,106 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: black;
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+}
+
+#pacman{
+  width: 0;
+  height: 0;
+  position: relative;
+  top: calc(50% - 40px);
+  left: 0px;
+  // margin-left: 40px;
+  // animation: pacman_move 4.95s infinite linear;
+  &::before{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-radius: 50%;
+    border-top: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 40px solid yellow;
+    border-left: 40px solid yellow;
+    animation: main_down 1s infinite linear;
+  }
+  &::after{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-radius: 50%;
+    border-top: 40px solid yellow;
+    border-right: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-left: 40px solid yellow;
+    animation: main_top 1s infinite linear;
+  }
+}
+
+.ghosts{
+  width: 400px;
+  height: 80px;
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  top: calc(50% - 40px);
+  left: -320px;
+  animation: ghost_move 5.8s infinite linear;
+  .ghost{
+    border-radius: 40px 40px 0 0;
+    width: 80px;
+    height: 80px;
+  }
+  .blinky{
+    background: #e62623;
+    margin-right: 40px;
+  }
+  .inky{
+    background: #00f7d8;
+  }
+  .pinky{
+    background: #f7b3d7;
+  }
+  .clyde{
+    background: #f7b146;
+  }
+}
+
+.background{
+  border: 3px solid blue;
+  width: 100vw;
+  height: 96px;
+  border-left: none;
+  border-right: none;
+  position: absolute;
+  top: calc(50% - 48px);
+}
+
+@keyframes main_top{
+  0%{transform: rotate(0deg)}
+  50%{transform: rotate(44deg)}
+  100%{transform: rotate(0deg)}
+}
+@keyframes main_down{
+  0%{transform: rotate(0deg)}
+  50%{transform: rotate(-44deg)}
+  100%{transform: rotate(0deg)}
+}
+
+// @keyframes pacman_move{
+//   0%{ transform: translateX(-220px)}
+//   100%{ transform: translateX(calc(100vw + 120px))}
+// }
+@keyframes ghost_move{
+  0%{ transform: translateX(-360px)}
+  100%{ transform: translateX(calc(100vw + 360px))}
+}

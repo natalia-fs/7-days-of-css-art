@@ -1,0 +1,185 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: black;
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+}
+
+#pacman {
+  width: 0;
+  height: 0;
+  position: relative;
+  top: calc(50% - 40px);
+  left: 0px;
+}
+
+#pacman::before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-radius: 50%;
+  border-top: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 40px solid yellow;
+  border-left: 40px solid yellow;
+  -webkit-animation: main_down 1s infinite linear;
+          animation: main_down 1s infinite linear;
+}
+
+#pacman::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-radius: 50%;
+  border-top: 40px solid yellow;
+  border-right: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-left: 40px solid yellow;
+  -webkit-animation: main_top 1s infinite linear;
+          animation: main_top 1s infinite linear;
+}
+
+.ghosts {
+  width: 400px;
+  height: 80px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  top: calc(50% - 40px);
+  left: -320px;
+  -webkit-animation: ghost_move 5.8s infinite linear;
+          animation: ghost_move 5.8s infinite linear;
+}
+
+.ghosts .ghost {
+  border-radius: 40px 40px 0 0;
+  width: 80px;
+  height: 80px;
+}
+
+.ghosts .blinky {
+  background: #e62623;
+  margin-right: 40px;
+}
+
+.ghosts .inky {
+  background: #00f7d8;
+}
+
+.ghosts .pinky {
+  background: #f7b3d7;
+}
+
+.ghosts .clyde {
+  background: #f7b146;
+}
+
+.background {
+  border: 3px solid blue;
+  width: 100vw;
+  height: 96px;
+  border-left: none;
+  border-right: none;
+  position: absolute;
+  top: calc(50% - 48px);
+}
+
+@-webkit-keyframes main_top {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(44deg);
+            transform: rotate(44deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes main_top {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(44deg);
+            transform: rotate(44deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes main_down {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(-44deg);
+            transform: rotate(-44deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes main_down {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(-44deg);
+            transform: rotate(-44deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes ghost_move {
+  0% {
+    -webkit-transform: translateX(-360px);
+            transform: translateX(-360px);
+  }
+  100% {
+    -webkit-transform: translateX(calc(100vw + 360px));
+            transform: translateX(calc(100vw + 360px));
+  }
+}
+
+@keyframes ghost_move {
+  0% {
+    -webkit-transform: translateX(-360px);
+            transform: translateX(-360px);
+  }
+  100% {
+    -webkit-transform: translateX(calc(100vw + 360px));
+            transform: translateX(calc(100vw + 360px));
+  }
+}
+/*# sourceMappingURL=styles.css.map */
