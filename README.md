@@ -14,4 +14,4 @@ Desafio pessoal para criar (ou recriar) uma arte por dia com HTML e CSS. Não te
 
 - [x] Day 6 - [Arte com animação](https://github.com/natalia-fs/7-days-of-css-art/tree/main/day-6)
 
-- [ ] Day 7 - Criar uma paisagem com CSS
+- [x] Day 7 - [Criar uma paisagem com CSS](https://github.com/natalia-fs/7-days-of-css-art/tree/main/day-7)
