@@ -4,6 +4,9 @@ Duração: cerca de 30 minutos
 
 Quantidade de divs: 6
 
+## Speed Code
+[Recriando arte minimalista com SCSS - (7 Days of CSS Art)](https://youtu.be/QUU6DCFWyiY)
+
 ## Preview
 
 <div align="center">

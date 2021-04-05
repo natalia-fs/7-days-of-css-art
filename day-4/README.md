@@ -4,6 +4,8 @@ Duração: cerca de 40 minutos
 
 Quantidade de divs: 1
 
+## Speed Code
+[Pixel art com CSS - (7 Days of CSS Art)](https://youtu.be/excXCGFwn7c)
 ## Preview
 
 <div align="center">

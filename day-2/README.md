@@ -4,6 +4,8 @@ Duração: cerca de 50 minutos
 
 Quantidade de divs: 13
 
+## Speed Code
+[Recriando personagem do Duolingo - (7 Days of CSS Art)](https://youtu.be/Gy5G_H3h-40)
 ## Preview
 
 <div align="center">
