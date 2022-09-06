@@ -1,5 +1,18 @@
 # 7 Days of CSS art
 
+Uma semana desenhando com CSS (ou SCSS)
+
+| :placard: Vitrine.Dev |     |
+| -------------  | --- |
+| :sparkles: Nome        | **7 Days Of CSS art**
+| :label: Tecnologias | HTML, CSS, SCSS
+| :rocket: URL         | https://www.youtube.com/playlist?list=PL6ApThZMcNSG0po1AjYIsIopVCBlJEqp2
+| :fire: Desafio     | https://github.com/natalia-fs/7-days-of-css-art
+
+![](https://github.com/natalia-fs/7-days-of-css-art/blob/main/preview.jpg?raw=true#vitrinedev)
+
+## Detalhes do projeto
+
 Desafio pessoal para criar (ou recriar) uma arte por dia com HTML e CSS. Não tenho ideia se conseguirei postar uma arte a cada dia, mas me esforçarei ao máximo.
 
 - [x] Day 1: [Recriar algum logo](https://github.com/natalia-fs/7-days-of-css-art/tree/main/day-1)
